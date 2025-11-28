@@ -3,10 +3,10 @@
 cd /tmp/.ques10/resources/
 
 # Define the commands to be executed
-command1="helm install security-alpha-apd --namespace=filtration-east ./filter-app"
-command2="helm install digi-locker-apd --namespace=secrets-global ./secrets-app"
-command3="helm install web-dashboard-apd --namespace=view-global ./view-app"
-command4="helm install atlanta-page-apd --namespace=catalog-eu-only ./catalog-app"
+command1="helm install filtration-east-app --namespace=filtration-east ./filter-app"
+command2="helm install secrets-global-app --namespace=secrets-global ./secrets-app"
+command3="helm install view-global-app --namespace=view-global ./view-app"
+command4="helm install catalog-eu-only --namespace=catalog-eu-only ./catalog-app"
 
 sleep 2
 
