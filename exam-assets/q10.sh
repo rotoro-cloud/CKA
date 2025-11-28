@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /tmp/.ques10/resources/
+cd /tmp/.ques10/exam-assets/
 
 # Define the commands to be executed
 command1="helm install filtration-east-app --namespace=filtration-east ./filter-app"
