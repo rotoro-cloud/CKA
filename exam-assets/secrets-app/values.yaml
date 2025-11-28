@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: rotorocloud/simple-webapp-rockets:v3
+  repository: rotorocloud/simple-webapp-rockets
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v2"
