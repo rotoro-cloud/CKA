@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: filtration-east
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: secrets-global
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: view-global
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: catalog-eu-only
