@@ -1,0 +1,34 @@
+# Default values for webapp-rockets.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 2
+
+image:
+  repository: rotorocloud/simple-webapp-rockets
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "v1"
+
+imagePullSecrets: []
+
+name: messenger-front-01
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: false
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: messenger-front-01-sa
+
+service:
+  name: messenger-front-01-svc
+  type: ClusterIP
+  port: 8080
+
+environment: development
+
+configMap:
+  name: messenger-configmap-10
